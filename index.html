@@ -27,15 +27,19 @@
     }
 
     h1 {
-      font-size: 2rem;
-      line-height: 2.5rem;
+      font-size: 1.5rem;
+      line-height: 1;
       margin: 0 0 1.5rem 0;
     }
 
     h2 {
       font-size: 1rem;
       margin: 0 0 0.75rem 0;
-      border-bottom: 0.2rem solid black;
+    }
+
+    .hr {
+      display: block;
+      overflow: hidden;
     }
 
     a {
@@ -73,13 +77,13 @@
 
     ul {
       margin: 0;
-      padding-left: 1.5rem;
-      list-style-type: square;
+      padding-left: 0.625rem;
+      list-style-type: "*";
     }
 
     li {
       margin: 0 0 1.5rem 0;
-      padding-left: 0.5rem;
+      padding-left: 0.625rem;
     }
 
     .thumbnails {
@@ -106,7 +110,12 @@
   </style>
 </head>
 <body>
-  <h1># Jonathan Hefner</h1>
+  <h1>
+    Jonathan Hefner
+    <span class="hr" aria-hidden="true">
+    ===============
+    </span>
+  </h1>
 
   <nav><!--
     -->&#8203;{&nbsp;<a href="mailto:jonathan@hefner.pro">Contact</a>&nbsp;}<!--
@@ -126,7 +135,13 @@
 
   <main>
     <section>
-      <h2>{ Design Samples }</h2>
+      <h2>
+        { Design Samples }
+        <span class="hr" aria-hidden="true">
+        ------------------------------------------------------------------------
+        </span>
+      </h2>
+
       <div class="thumbnails">
         <a href="images/blue-skies.png">
           <img src="images/blue-skies_thumb.jpg" alt="desktop screenshot" class="thumb-desktop"/>
@@ -159,7 +174,13 @@
     </section>
 
     <section>
-      <h2>{ Code Samples }</h2>
+      <h2>
+        { Code Samples }
+        <span class="hr" aria-hidden="true">
+        ------------------------------------------------------------------------
+        </span>
+      </h2>
+
       <ul>
         <li>
           <a href="https://github.com/jonathanhefner/garden_variety">garden_variety</a>
