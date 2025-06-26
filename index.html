@@ -2,208 +2,62 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Jonathan Hefner - Software Engineer</title>
+  <title>Jonathan Hefner (Software Engineer)</title>
   <style>
-    @import url(https://fonts.googleapis.com/css?family=JetBrains+Mono);
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
     html {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 4.25vw;
-    }
-
-    @media only screen and (min-width: 558px) {
-      html { font-size: 2.15vw; }
-      body { margin: 1.5rem auto; }
-    }
-
-    @media only screen and (min-width: 990px) {
-      html { font-size: 22px; }
+      font-family: 'EB Garamond', serif;
+      font-size: min(/* mobile */ 5.5vw, /* desktop */ 28px);
+      --spacer: 1rem;
     }
 
     body {
-      max-width: 45rem;
+      margin: var(--spacer) auto;
+      max-width: min(/* mobile */ calc(100% - 2 * var(--spacer)), /* desktop */ 30rem);
       line-height: 1.5rem;
-      color: black;
     }
 
     h1 {
+      margin: var(--spacer) 0 0 0;
       font-size: 1.5rem;
       line-height: 1;
-      margin: 0 0 1.5rem 0;
-    }
-
-    h2 {
-      font-size: 1rem;
-      margin: 0;
-    }
-
-    .hr {
-      display: block;
-      overflow: hidden;
-      font-weight: bold;
-    }
-
-    a {
-      color: blue;
-      font-weight: bold;
-    }
-
-    a:visited {
-      color: purple;
-    }
-
-    nav, section, p {
-      margin: 0 0 1.5rem 0;
+      text-align: center;
     }
 
     nav {
-      font-weight: bold;
-      letter-spacing: -0.02rem;
-    }
-
-    nav a {
-      letter-spacing: 0;
-    }
-
-    main, .thumbnails {
+      margin: calc(var(--spacer) / 2) 0 0 0;
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
+      gap: var(--spacer);
+      font-weight: bold;
     }
 
-    section {
-      width: 21.5em;
-    }
-
-    ul {
-      margin: 0;
-      padding-left: 0.625rem;
-      list-style-type: "*";
-    }
-
-    li {
-      margin: 0 0 1.5rem 0;
-      padding-left: 0.625rem;
-    }
-
-    .thumbnails {
-      line-height: 0;
-    }
-
-    .thumbnails a {
-      border: none;
-      margin: 0.25rem 0 0.5rem 0;
-    }
-
-    .thumb-desktop, .thumb-mobile {
-      border: 0.2rem solid;
-      height: 7.5rem;
-    }
-
-    .thumb-desktop {
-      width: 15rem;
-    }
-
-    .thumb-mobile {
-      width: 5rem;
+    p {
+      margin: var(--spacer) 0 0 0;
     }
   </style>
 </head>
 <body>
   <h1>Jonathan Hefner</h1>
 
-  <nav><!--
-    -->&#8203;{&nbsp;<a href="mailto:jonathan@hefner.pro">Contact</a>&nbsp;}<!--
-    -->&#8203;{&nbsp;<a href="resume.pdf">R&#xE9;sum&#xE9;</a>&nbsp;}<!--
-    -->&#8203;{&nbsp;<a href="https://github.com/jonathanhefner">GitHub</a>&nbsp;}<!--
-    -->&#8203;{&nbsp;<a href="http://www.linkedin.com/in/jonathanhefner">LinkedIn</a>&nbsp;}<!--
-  --></nav>
+  <nav>
+    <a href="https://github.com/jonathanhefner">GitHub</a>
+    <a href="http://www.linkedin.com/in/jonathanhefner">LinkedIn</a>
+    <a href="resume.pdf">R&#xE9;sum&#xE9;</a>
+    <a href="mailto:jonathan@hefner.pro">Email</a>
+  </nav>
 
-  <p><strong>Hello.</strong>  My name is Jonathan Hefner.  I'm a software
-    engineer with more than a decade of experience.  I have a wide background
-    with different programming languages and technologies, from electronic
-    medical record software to high-performance data transformation pipelines.
-    My specialization for the last several years has been web development using
-    Ruby on Rails.  You can find some design samples and code samples below.
-    If you would like to work together, please
-    <a href="mailto:jonathan@hefner.pro">get in touch</a>!</p>
+  <p>
+    <strong>Hello!</strong>  I am a software engineer with 20 years of experience.  I have a keen interest in all things <a href="https://en.wikipedia.org/wiki/Developer_experience">DX</a>.  I love technology because it's a force multiplier.  I see good DX as a multiplier of a multiplier.  Someone who's played video games can tell you how powerful those can be. &#128521;
+  </p>
 
-  <main>
-    <section>
-      <h2>Design Samples</h2>
-      <div class="hr" aria-hidden="true">
-        ------------------------------------------------------------------------
-      </div>
+  <p>
+    For the past several years I have been <a href="https://contributors.rubyonrails.org/contributors/jonathan-hefner/commits">contributing to Ruby on Rails</a>, and I am a <a href="https://rubyonrails.org/community#committers">member of the Rails committers team</a>.
+  </p>
 
-      <div class="thumbnails">
-        <a href="images/blue-skies.png">
-          <img src="images/blue-skies_thumb.jpg" alt="desktop screenshot" class="thumb-desktop"/>
-        </a>
-        <a href="images/blue-skies-mobile.png">
-          <img src="images/blue-skies-mobile_thumb.jpg" alt="mobile screenshot" class="thumb-mobile"/>
-        </a>
-
-        <a href="images/great-outdoors.jpg">
-          <img src="images/great-outdoors_thumb.jpg" alt="desktop screenshot" class="thumb-desktop"/>
-        </a>
-        <a href="images/great-outdoors-mobile.jpg">
-          <img src="images/great-outdoors-mobile_thumb.jpg" alt="mobile screenshot" class="thumb-mobile"/>
-        </a>
-
-        <a href="images/read-all-over.png">
-          <img src="images/read-all-over_thumb.jpg" alt="desktop screenshot" class="thumb-desktop"/>
-        </a>
-        <a href="images/read-all-over-mobile.png">
-          <img src="images/read-all-over-mobile_thumb.jpg" alt="mobile screenshot" class="thumb-mobile"/>
-        </a>
-
-        <a href="images/yellow-hello.png">
-          <img src="images/yellow-hello_thumb.jpg" alt="desktop screenshot" class="thumb-desktop"/>
-        </a>
-        <a href="images/yellow-hello-mobile.png">
-          <img src="images/yellow-hello-mobile_thumb.jpg" alt="mobile screenshot" class="thumb-mobile"/>
-        </a>
-      </div>
-    </section>
-
-    <section>
-      <h2>Code Samples</h2>
-      <div class="hr" aria-hidden="true">
-        ------------------------------------------------------------------------
-      </div>
-
-      <ul>
-        <li>
-          <a href="https://github.com/jonathanhefner/garden_variety">garden_variety</a>
-          <br/>Ruby on Rails controllers made delightfully boring
-        </li>
-        <li>
-          <a href="https://github.com/jonathanhefner/talent_scout">talent_scout</a>
-          <br/>Model-backed searches in Rails
-        </li>
-        <li>
-          <a href="https://github.com/jonathanhefner/moar">moar</a>
-          <br/>More-style pagination for Rails
-        </li>
-        <li>
-          <a href="https://github.com/jonathanhefner/dub_thee">dub_thee</a>
-          <br/>Rails page titles via I18n
-        </li>
-        <li>
-          <a href="https://github.com/jonathanhefner/grubby">grubby</a>
-          <br/>Fail-fast web scraping
-        </li>
-        <li>
-          <a href="https://github.com/jonathanhefner/pleasant_path">pleasant_path</a>
-          <br/>Fluent API for pleasant file IO
-        </li>
-        <li>
-          <a href="https://github.com/jonathanhefner/benchmark-inputs">benchmark-inputs</a>
-          <br/>Input-focused Ruby benchmarking
-        </li>
-      </ul>
-    </section>
-  </main>
+  <p>
+    I also recently became a member of the <a href="https://modelcontextprotocol.io/">MCP</a> Steering Committee.  I'm very excited about the possiblities that MCP offers.  AIs are powerful but not necessarily robust.  Using MCP, developers can carve challenges out from a problem domain, and create reusable, reliable solutions.  AIs can then compose those solutions in bespoke ways.  It's like DX for the AI itself! &#128515;
+  </p>
 </body>
 </html>
